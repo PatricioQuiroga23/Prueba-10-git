@@ -8,6 +8,10 @@ usethis::use_git()
 
 usethis::use_github()
 
+usethis::create_github_token()
+
+usethis::edit_r_environ()
+
 library(ggplot2)
 
 actual_returns <- c(0.08, 0.06, 0.05, 0.07, 0.09) # Actual returns of the investment
@@ -25,3 +29,4 @@ ggplot(data, aes(x = dates)) +
   scale_color_manual(values = c("Actual Returns" = "blue", "Benchmark" = "red")) +
   theme_minimal()
 
+dates2 <- 1:6
