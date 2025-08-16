@@ -22,6 +22,8 @@ dates <- 1:5 # Assuming 5 time periods
 
 data <- data.frame(dates, actual_returns, benchmark_returns)
 
+data <- data.frame(dates, actual_returns, benchmark_returns)
+
 ggplot(data, aes(x = dates)) +
   geom_line(aes(y = actual_returns, color = "Actual Returns")) +
   geom_line(aes(y = benchmark_returns, color = "Benchmark")) +
